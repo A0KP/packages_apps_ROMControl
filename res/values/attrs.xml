@@ -25,11 +25,6 @@
         <attr name="colorPickerShowAlphaSlider" format="boolean"/>
     </declare-styleable>
 
-    <declare-styleable name="MultiChoiceSetting">
-        <attr name="minSelectionCount" format="integer"/>
-        <attr name="maxSelectionCount" format="integer"/>
-    </declare-styleable>
-
     <declare-styleable name="PagerSlidingTabStrip">
         <attr name="indicatorColor" format="color" />
         <attr name="underlineColor" format="color" />
@@ -42,6 +37,11 @@
         <attr name="tabBackground" format="reference" />
         <attr name="shouldExpand" format="boolean" />
         <attr name="textAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiChoiceSetting">
+        <attr name="minSelectionCount" format="integer"/>
+        <attr name="maxSelectionCount" format="integer"/>
     </declare-styleable>
 
 </resources>

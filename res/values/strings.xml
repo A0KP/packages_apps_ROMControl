@@ -35,14 +35,16 @@
     <string name="carbon_irc_summary">#teamcarbon @ irc.freenode.net</string>
     <string name="about_carbon">About CarbonROM</string>
     <string name="about_carbon_summary">@null</string>
-    <string name="donate_carbon">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WQV8UFE9JR9TG
-    </string>
+    <string name="donate_carbon">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WQV8UFE9JR9TG</string>
     <string name="github_carbon">https://github.com/CarbonROM</string>
     <string name="github_stelix">https://github.com/STELIX</string>
 
     <string name="url_carbon">http://carbonrom.org/</string>
     <string name="url_carbon_gerrit">http://review.carbonrom.org</string>
     <string name="url_carbon_irc">http://webchat.freenode.net/?channels=carbonrom</string>
+
+    <string name="android_carbonrom">Android CarbonROM</string>
+    <string name="staff">The Staff</string>
 
     <!-- dynamic changelog -->
     <string name="mgerrit_changelog_title">mGerrit: Dynamic ChangeLog</string>
