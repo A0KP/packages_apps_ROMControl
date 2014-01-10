@@ -88,6 +88,13 @@
     <string name="title_hardware_keys_switch_app_long_press">Recents - long press</string>
     <string name="title_setting_enable_custom_hardware_keys">Customize hardware keys</string>
 
+    <string name="setting_key_home_long_press_action_nothing">Nothing</string>
+    <string name="setting_key_home_long_press_action_menu">Menu</string>
+    <string name="setting_key_home_long_press_action_appswitch">App-switch</string>
+    <string name="setting_key_home_long_press_action_search">Search</string>
+    <string name="setting_key_home_long_press_action_voicesearch">Voice search</string>
+    <string name="setting_key_home_long_press_action_inappsearch">In-app search</string>
+
     <!-- Statusbar Settings -->
     <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
     <string name="status_bar_double_tap_to_sleep_summary">Double-tap on statusbar to put device to sleep</string>
