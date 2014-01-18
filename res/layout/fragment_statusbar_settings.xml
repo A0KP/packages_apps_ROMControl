@@ -34,7 +34,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 
-                android:id="@+id/double_tap_sleep_gesture"
                 android:title="@string/status_bar_double_tap_to_sleep_title"
                 android:summary="@string/status_bar_double_tap_to_sleep_summary"
                 android:key="double_tap_sleep_gesture"
