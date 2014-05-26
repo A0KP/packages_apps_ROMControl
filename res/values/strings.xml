@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!--
+/**
+ * Copyright (c) 2013, The Android Open Kang Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string name="app_name">ROM Control</string>
     <string name="rom_control">ROM Control</string>
@@ -23,6 +41,16 @@
 
     <!-- Menu Items -->
     <string name="menu_show_drawer_icon">Show in app drawer</string>
+
+    <!-- MultiChoiceSetting -->
+    <plurals name="multichoice_at_least">
+        <item quantity="one">Please select at least <xliff:g id="number">%d</xliff:g> item.</item>
+        <item quantity="other">Please select at least <xliff:g id="number">%d</xliff:g> items.</item>
+    </plurals>
+    <plurals name="multichoice_at_most">
+        <item quantity="one">Please select at most <xliff:g id="number">%d</xliff:g> item.</item>
+        <item quantity="other">Please select at most <xliff:g id="number">%d</xliff:g> items.</item>
+    </plurals>
 
     <!-- About -->
     <string name="devs">The Crew</string>
