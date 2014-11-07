@@ -43,7 +43,7 @@ public class ColorPickerDialog
 
     private EditText mHex;
     private Button mSetButton;
-    private Button mDefaultColor;
+    private Button mIcsColor;
 
     private OnColorChangedListener mListener;
 
@@ -81,7 +81,7 @@ public class ColorPickerDialog
         mNewColor = (ColorPickerPanelView) layout.findViewById(R.id.new_color_panel);
         mHex = (EditText) layout.findViewById(R.id.hex);
         mSetButton = (Button) layout.findViewById(R.id.enter);
-        mDefaultColor = (Button) layout.findViewById(R.id.default_color);
+        mIcsColor = (Button) layout.findViewById(R.id.ics_color);
 
         ((LinearLayout) mOldColor.getParent()).setPadding(
                 Math.round(mColorPicker.getDrawingOffset()),
@@ -108,12 +108,12 @@ public class ColorPickerDialog
                 }
             }
         });
-        mDefaultColor.setOnClickListener(new View.OnClickListener() {
+        mIcsColor.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 try {
-                    int newColor = 0xFFFFFFFF;
+                    int newColor = 0xFF33B5E5;
                     mColorPicker.setColor(newColor, true);
                 } catch (Exception e) {
                 }

@@ -20,16 +20,16 @@
 
         <TextView
                 android:id="@+id/title"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textAppearance="?android:attr/textAppearanceLarge"
                 android:ellipsize="marquee"
                 android:fadingEdge="horizontal"/>
 
         <TextView
                 android:id="@+id/summary"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/title"
                 android:layout_alignLeft="@+id/title"

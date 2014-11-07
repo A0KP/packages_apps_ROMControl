@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2013 The Android Open Kang Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package com.aokp.romcontrol;
 
 import android.app.ActionBar;
@@ -23,35 +7,18 @@ import android.app.FragmentManager;
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import android.view.View;
-import com.aokp.romcontrol.fragments.about.AboutFragment;
-import com.aokp.romcontrol.fragments.AnimationsFragment;
+import com.aokp.romcontrol.fragments.AboutFragment;
 import com.aokp.romcontrol.fragments.GeneralSettingsFragment;
 import com.aokp.romcontrol.fragments.HardwareKeysFragment;
-import com.aokp.romcontrol.fragments.InstallerSettingsFragment;
-import com.aokp.romcontrol.fragments.LedSettingsFragment;
-import com.aokp.romcontrol.fragments.LockscreenSettingsFragment;
-import com.aokp.romcontrol.fragments.NavRingTargets;
 import com.aokp.romcontrol.fragments.NavigationDrawerFragment;
-import com.aokp.romcontrol.fragments.PowerMenuSettingsFragment;
-import com.aokp.romcontrol.fragments.ribbons.RibbonsFragment;
 import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
-import com.aokp.romcontrol.fragments.SoundSettingsFragment;
-import com.aokp.romcontrol.fragments.about.AboutTabHostFragment;
-import com.aokp.romcontrol.fragments.navbar.NavbarTabHostFragment;
-import com.aokp.romcontrol.fragments.toggles.TogglesTabHostFragment;
-import com.aokp.romcontrol.fragments.AutoImmersiveSettingsFragment;
-import com.aokp.romcontrol.fragments.headsup.HeadsUpTabHostFragment;
 
 
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -65,14 +32,12 @@ public class MainActivity extends Activity
 
     private Fragment mSelectedFragment;
     private String[] mDrawerEntries;
-    private String[] mDrawerValues;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         mDrawerEntries = getResources().getStringArray(R.array.navigation_drawer_entries);
-        mDrawerValues = getResources().getStringArray(R.array.navigation_drawer_values);
 
         setContentView(R.layout.activity_main);
         mNavigationDrawerFragment = (NavigationDrawerFragment)
@@ -83,9 +48,6 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
-
-        ActionBar bar = getActionBar();
-        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     }
 
     @Override
@@ -100,61 +62,23 @@ public class MainActivity extends Activity
     public Fragment getFragmentToAttach(int position) {
         int index = position;
         mTitle = mDrawerEntries[index];
-        String item = mDrawerValues[index];
         Fragment fragment = null;
+        switch (position) {
+            case 0:
+                fragment = new AboutFragment();
+                break;
 
-        // blame Google for not using Java 7 yet
-        if ("about_aokp".equals(item)) {
-            fragment = new AboutTabHostFragment();
-        }
-        else if ("general".equals(item)) {
-            fragment = new GeneralSettingsFragment();
-        }
-        else if ("lockscreen".equals(item)) {
-            fragment = new LockscreenSettingsFragment();
-        }
-        else if ("statusbar".equals(item)) {
-            fragment = new StatusbarSettingsFragment();
-        }
-        else if ("toggles".equals(item)) {
-            fragment = new TogglesTabHostFragment();
-        }
-        else if ("hardware_keys".equals(item)) {
-            fragment = new HardwareKeysFragment();
-        }
-        else if ("power_menu".equals(item)) {
-            fragment = new PowerMenuSettingsFragment();
-        }
-        else if ("navbar".equals(item)) {
-            fragment = new NavbarTabHostFragment();
-        }
-        else if ("navring".equals(item)) {
-            fragment = new NavRingTargets();
-        }
-        else if ("sound".equals(item)) {
-            fragment = new SoundSettingsFragment();
-        }
-        else if ("installer".equals(item)) {
-            fragment = new InstallerSettingsFragment();
-        }
-        else if ("ribbons".equals(item)) {
-            fragment = new RibbonsFragment();
-        }
-        else if ("animations".equals(item)) {
-            fragment = new AnimationsFragment();
-        }
-        else if ("led".equals(item)) {
-            fragment = new LedSettingsFragment();
-        }
-        else if ("auto_immersive".equals(item)) {
-            fragment = new AutoImmersiveSettingsFragment();
-        }
-        else if ("headsup".equals(item)) {
-            fragment = new HeadsUpTabHostFragment();
-        }
-        else {
-            // who knows
-            fragment = new AboutTabHostFragment();
+            case 1:
+                fragment = new GeneralSettingsFragment();
+                break;
+
+            case 2:
+                fragment = new HardwareKeysFragment();
+                break;
+
+            case 3:
+                fragment = new StatusbarSettingsFragment();
+                break;
         }
         return fragment;
     }
@@ -211,4 +135,6 @@ public class MainActivity extends Activity
         int componentStatus = p.getComponentEnabledSetting(new ComponentName(this, LauncherActivity.class));
         return componentStatus != PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
     }
+
+
 }

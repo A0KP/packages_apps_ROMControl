@@ -1,26 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-/**
- * Copyright (c) 2013-2014, The Android Open Kang Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
--->
+<resources>
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-
-    <string name="app_name">ROM control</string>
-    <string name="rom_control">ROM control</string>
+    <string name="app_name">ROM Control</string>
+    <string name="rom_control">ROM Control</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -28,134 +10,71 @@
     <string name="category_general">General</string>
     <string name="category_statusbar">Statusbar</string>
     <string name="category_about_aokp">About</string>
-    <string name="category_hardware_keys">Hardware keys</string>
-    <string name="category_lockscreen">Lockscreen</string>
-    <string name="category_installer">Installer</string>
-    <string name="category_toggles">Toggles</string>
-    <string name="category_navring">Navigation ring</string>
-    <string name="category_navbar">Navigation bar</string>
-    <string name="category_sound">Sound</string>
-    <string name="category_power_menu">Power menu </string>
-    <string name="category_ribbons">Ribbons</string>
-    <string name="category_animations">Animations</string>
-    <string name="category_led">LED</string>
-    <string name="category_auto_immersive">Auto Immersive</string>
-    <string name="category_headsup">Heads up</string>
+    <string name="category_hardware_keys">Hardware Keys</string>
 
     <!-- Menu Items -->
     <string name="menu_show_drawer_icon">Show in app drawer</string>
 
-    <!-- MultiChoiceSetting -->
-    <plurals name="multichoice_at_least">
-        <item quantity="one">Please select at least <xliff:g id="number">%d</xliff:g> item.</item>
-        <item quantity="other">Please select at least <xliff:g id="number">%d</xliff:g> items.</item>
-    </plurals>
-    <plurals name="multichoice_at_most">
-        <item quantity="one">Please select at most <xliff:g id="number">%d</xliff:g> item.</item>
-        <item quantity="other">Please select at most <xliff:g id="number">%d</xliff:g> items.</item>
-    </plurals>
-
     <!-- About -->
     <string name="devs">The Crew</string>
-    <string name="aokp" translatable="false">Android Open Kang Project</string>
-    <string name="aokp_website_title">AOKP website</string>
-    <string name="aokp_website_summary">www.aokp.co - Find all newest releases here</string>
+    <string name="aokp">Android Open Kang Project</string>
+    <string name="aokp_website_title">AOKP Website</string>
+    <string name="aokp_website_summary">www.aokp.co - Find all newest releases here.</string>
     <string name="aokp_review_title">AOKP Code Review - Gerrit</string>
     <string name="aokp_review_summary">View AOKP\'s Gerrit instance</string>
     <string name="aokp_irc_title">Join us on IRC</string>
     <string name="aokp_irc_summary">#teamkang @ irc.freenode.net</string>
     <string name="about_aokp">About AOKP</string>
     <string name="about_aokp_summary">@null</string>
-    <string name="donate_aokp" translatable="false">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DBBCGTVJ984YG
+    <string name="donate_aokp">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=DBBCGTVJ984YG
     </string>
-    <string name="github_aokp" translatable="false">https://github.com/AOKP</string>
-    <string name="github_adam" translatable="false">https://github.com/syaoran12</string>
-    <string name="github_akellar" translatable="false">https://github.com/akellar</string>
-    <string name="github_bajee11" translatable="false">https://github.com/Bajee11</string>
-    <string name="github_bmc08gt" translatable="false">https://github.com/BMc08GT</string>
-    <string name="github_birdman" translatable="false">https://github.com/mrbirdman</string>
-    <string name="github_bytecodeme" translatable="false">https://github.com/BytecodeMe</string>
-    <string name="github_championswimmer" translatable="false">https://github.com/championswimmer</string>
-    <string name="github_DAGr8" translatable="false">https://github.com/DAGr8</string>
-    <string name="github_dhacker29" translatable="false">https://github.com/dhacker29</string>
-    <string name="github_elelinux" translatable="false">https://github.com/elelinux</string>
-    <string name="github_graffixnyc" translatable="false">https://github.com/graffixnyc</string>
-    <string name="github_hashcode" translatable="false">https://github.com/Hashcode</string>
-    <string name="github_willdeberry" translatable="false">https://github.com/willdeberry</string>
-    <string name="github_jbirdvegas" translatable="false">https://github.com/JBirdVegas</string>
-    <string name="github_k900" translatable="false">https://github.com/K900</string>
-    <string name="github_kecinzer" translatable="false">https://github.com/kecinzer</string>
-    <string name="github_khasmek" translatable="false">https://github.com/KhasMek</string>
-    <string name="github_kwes" translatable="false">https://github.com/kwes1020</string>
-    <string name="github_marclandis" translatable="false">https://github.com/MarcLandis</string>
-    <string name="github_rohan32" translatable="false">https://github.com/rohanmathur</string>
-    <string name="github_roman" translatable="false">https://github.com/romanbb</string>
-    <string name="github_protekk" translatable="false">https://github.com/ProTekk</string>
-    <string name="github_qnhoang81" translatable="false">https://github.com/qnhoang81</string>
-    <string name="github_scar45" translatable="false">https://github.com/scar45</string>
-    <string name="github_sethyx" translatable="false">https://github.com/sethyx</string>
-    <string name="github_sixstringsg" translatable="false">https://github.com/sixstringsg</string>
-    <string name="github_stevespear" translatable="false">https://github.com/Stevespear426</string>
-    <string name="github_tdm" translatable="false">https://github.com/tdm</string>
-    <string name="github_whitehawk" translatable="false">https://github.com/Whitehawkx</string>
-    <string name="github_xoom" translatable="false">https://github.com/xoomdev</string>
-    <string name="github_zaph" translatable="false">https://github.com/Zaphod-Beeblebrox</string>
-    <string name="url_aokp" translatable="false">http://aokp.co/</string>
-    <string name="url_aokp_gerrit" translatable="false">http://gerrit.aokp.co</string>
-    <string name="url_aokp_irc" translatable="false">http://webchat.freenode.net/?channels=teamkang</string>
-    <string name="android_open_kang_project" translatable="false">Android Open Kang Project</string>
-    <string name="kanglings">The Kanglings</string>
-
-    <!--Battery Icon selection-->
-    <string name="battery_status_icon_title">Status icon</string>
-    <string name="battery_bar_percent">Battery bar &amp; percent</string>
-    <string name="battery_bar">Battery bar</string>
-    <string name="battery_circle">Battery circle</string>
-    <string name="battery_circle_percent">Battery circle &amp; percent</string>
+    <string name="github_aokp">https://github.com/AOKP</string>
+    <string name="github_adam">https://github.com/syaoran12</string>
+    <string name="github_akellar">https://github.com/akellar</string>
+    <string name="github_bajee11">https://github.com/Bajee11</string>
+    <string name="github_bmc08gt">https://github.com/BMc08GT</string>
+    <string name="github_birdman">https://github.com/mrbirdman</string>
+    <string name="github_championswimmer">https://github.com/championswimmer</string>
+    <string name="github_DAGr8">https://github.com/DAGr8</string>
+    <string name="github_dhacker29">https://github.com/dhacker29</string>
+    <string name="github_graffixnyc">https://github.com/graffixnyc</string>
+    <string name="github_hashcode">https://github.com/Hashcode</string>
+    <string name="github_willdeberry">https://github.com/willdeberry</string>
+    <string name="github_jbirdvegas">https://github.com/JBirdVegas</string>
+    <string name="github_k900">https://github.com/K900</string>
+    <string name="github_kecinzer">https://github.com/kecinzer</string>
+    <string name="github_khasmek">https://github.com/KhasMek</string>
+    <string name="github_kwes">https://github.com/kwes1020</string>
+    <string name="github_marclandis">https://github.com/MarcLandis</string>
+    <string name="github_rohan32">https://github.com/rohanmathur</string>
+    <string name="github_roman">https://github.com/romanbb</string>
+    <string name="github_protekk">https://github.com/ProTekk</string>
+    <string name="github_qnhoang81">https://github.com/qnhoang81</string>
+    <string name="github_scar45">https://github.com/scar45</string>
+    <string name="github_sethyx">https://github.com/sethyx</string>
+    <string name="github_sixstringsg">https://github.com/sixstringsg</string>
+    <string name="github_stevespear">https://github.com/Stevespear426</string>
+    <string name="github_tdm">https://github.com/tdm</string>
+    <string name="github_whitehawk">https://github.com/Whitehawkx</string>
+    <string name="github_xoom">https://github.com/xoomdev</string>
+    <string name="github_zaph">https://github.com/Zaphod-Beeblebrox</string>
+    <string name="url_aokp">http://aokp.co/</string>
+    <string name="url_aokp_gerrit">http://gerrit.aokp.co</string>
+    <string name="url_aokp_irc">http://webchat.freenode.net/?channels=teamkang</string>
 
     <!-- dynamic changelog -->
     <string name="mgerrit_changelog_title">mGerrit: Dynamic ChangeLog</string>
     <string name="mgerrit_changelog_summary">Interactive changelog pulled live from our Gerrit instance</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color picker</string>
-    <string name="press_color_to_apply">Press on color to apply</string>
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
-    <string name="hex_hint" translatable="false">#FF000000</string>
+    <string name="hex_hint">#FF000000</string>
     <string name="set">Set</string>
-    <string name="default_color">Default</string>
-
-    <!-- Time -->
-    <string name="time_0_seconds_off">Off</string>
-    <string name="time_0_2_seconds">.2 seconds</string>
-    <string name="time_0_5_seconds">.5 seconds</string>
-    <string name="time_1_second">1 second</string>
-    <string name="time_1_5_seconds">1.5 seconds</string>
-    <string name="time_2_seconds">2 seconds</string>
-    <string name="time_2_5_seconds">2.5 seconds</string>
-    <string name="time_3_seconds">3 seconds</string>
-    <string name="time_3_5_seconds">3.5 seconds</string>
-    <string name="time_4_seconds">4 seconds</string>
-    <string name="time_4_5_seconds">4.5 seconds</string>
-    <string name="time_5_seconds">5 seconds</string>
-    <string name="time_5_5_seconds">5.5 seconds</string>
-    <string name="time_6_seconds">6 seconds</string>
-    <string name="time_7_seconds">7 seconds</string>
-    <string name="time_8_seconds">8 seconds</string>
-    <string name="time_9_seconds">9 seconds</string>
-    <string name="time_10_seconds">10 seconds</string>
-
-    <!-- Dimens -->
-    <string name="size_42_dp_default">42 dp (default)</string>
-    <string name="size_36_dp">36 dp</string>
-    <string name="size_30_dp">30 dp</string>
-    <string name="size_24_dp">24 dp</string>
-    <string name="size_48_dp_default">48 dp (default)</string>
-    <string name="size_44_dp">44 dp</string>
-    <string name="size_40_dp">40 dp</string>
-    <string name="size_42_dp">42 dp</string>
+    <string name="ics_color">Holo</string>
 
     <!-- Shortcut picker -->
     <string name="use_custom_app_title">Use custom application</string>
@@ -164,481 +83,30 @@
     <string name="group_applications">Applications</string>
 
     <!-- General -->
-    <string name="ok">OK</string>
-    <string name="save">Save</string>
-    <string name="reset">Reset</string>
-    <string name="cancel">Cancel</string>
-    <string name="center">Centered</string>
-    <string name="top">Top</string>
-    <string name="bottom">Bottom</string>
+    <string name="brightness_slider_title">Statusbar brightness slider</string>
+    <string name="brightness_slider_summary">When enabled, this option will allow you to change the brightness by
+        sliding your finger across the Statusbar. Note: Will not be active when auto-brightness is on
+    </string>
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charger</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if a charger is plugged in or unplugged</string>
-    <string name="ram_bar_title">Recents RAM bar</string>
-    <string name="ram_bar_summary">Shows RAM usage in the recent apps window</string>
-    <string name="force_highend_gfx_title">Force high-end graphics</string>
-    <string name="force_highend_gfx_summary">Enables high-end visual effects such as transparent status/navigation bar (requires reboot)</string>
+    <string name="category_advanced">Advanced</string>
+    <string name="title_hardware_keys_volume_keys_double_tap">Volume Smash Rotation</string>
+    <string name="summary_hardware_keys_volume_keys_double_tap">Whether double tapping the volume keys will lock and unlock the auto-rotate setting</string>
 
     <!-- Hardware keys -->
     <string name="title_hardware_keys_home_long_press">Home - long press</string>
     <string name="title_hardware_keys_home_double_tap">Home - double tap</string>
-    <string name="title_hardware_keys_back_long_press">Back - long press</string>
     <string name="title_hardware_keys_menu">Menu</string>
     <string name="title_hardware_keys_menu_long_press">Menu - long press</string>
     <string name="title_hardware_keys_search">Search</string>
     <string name="title_hardware_keys_search_long_press">Search - long press</string>
     <string name="title_hardware_keys_switch_app">Recents</string>
     <string name="title_hardware_keys_switch_app_long_press">Recents - long press</string>
-    <string name="title_hardware_keys_camera">Camera</string>
     <string name="title_setting_enable_custom_hardware_keys">Customize hardware keys</string>
-    <string name="summary_setting_enable_custom_hardware_keys">Enable to allow custom actions for the hardware keys to be set.</string>
-
-    <string name="setting_key_home_long_press_action_nothing">Nothing</string>
-    <string name="setting_key_home_long_press_action_menu">Menu</string>
-    <string name="setting_key_home_long_press_action_appswitch">App-switch</string>
-    <string name="setting_key_home_long_press_action_search">Search</string>
-    <string name="setting_key_home_long_press_action_voicesearch">Voice search</string>
-    <string name="setting_key_home_long_press_action_inappsearch">In-app search</string>
-    <string name="setting_key_home_long_press_action_killapp">Kill app</string>
-
-    <string name="category_backlight">Backlight</string>
-    <string name="buttons_backlight_timeout">Illumination timeout</string>
-    <string name="buttons_brightness">Button brightness</string>
-    <string name="backlight_timeout_unlimited">Don\'t turn off</string>
-    <plurals name="backlight_timeout_time">
-        <item quantity="one"><xliff:g id="seconds">%d</xliff:g> second</item>
-        <item quantity="other"><xliff:g id="seconds">%d</xliff:g> seconds</item>
-    </plurals>
-
-    <string name="category_advanced">Advanced</string>
-    <string name="title_hardware_keys_volume_keys_double_tap">Volume smash rotation</string>
-    <string name="summary_hardware_keys_volume_keys_double_tap">Whether double tapping the volume keys will lock and unlock the auto-rotate setting</string>
-    <string name="volume_key_cursor_control_title">Volume key cursor control</string>
-    <string name="volume_key_cursor_control_off">Disabled</string>
-    <string name="volume_key_cursor_control_on">Volume up/down moves cursor left/right</string>
-    <string name="volume_key_cursor_control_on_reverse">Volume up/down moves cursor right/left</string>
 
     <!-- Statusbar Notifications -->
-    <string name="category_statusbar_notification">Notifications</string>
-    <string name="category_statusbar_battery">Battery</string>
-    <string name="category_statusbar_clock">Clock</string>
-
-    <string name="brightness_slider_title">Statusbar brightness slider</string>
-    <string name="brightness_slider_summary">Slide finger across statusbar to change brightness. Disabled when auto-brightness is on.</string>
-    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
-    <string name="status_bar_double_tap_to_sleep_summary">Double-tap on statusbar to put device to sleep</string>
-
     <string name="adb_notify">USB debugging notify</string>
     <string name="adb_notify_summary">Display a notification when USB debugging is connected</string>
-    <string name="ime_switcher_title">Show IME switcher</string>
+    <string name="ime_switcher_title">Show IME Switcher</string>
     <string name="ime_switcher_summary">In Statusbar while typing</string>
-    <string name="vibrate_notif_expand_title">Vibrate on expand</string>
-    <string name="vibrate_notif_expand_summary">Vibrate when expanding notifications</string>
-    <string name="notification_count_title">Show notification count</string>
-    <string name="notification_count_summary">Display number of pending notifications in the statusbar</string>
-
-    <string name="statusbar_clock_am_pm_style_title">AM/PM style</string>
-    <string name="statusbar_clock_am_pm_style_summary">How is AM/PM displayed</string>
-    <string name="statusbar_clock_style_title">Clock style</string>
-    <string name="statusbar_clock_style_summary">Clock position in statusbar</string>
-    <string name="statusbar_clock_weekday_title">Day of the week</string>
-    <string name="statusbar_clock_weekday_summary">Display day of the week front of clock</string>
-    <string name="statusbar_clock_date_title">Date</string>
-    <string name="statusbar_clock_date_summary">Display date front of clock</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="no_clock">No clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="small_am_pm">Small AM/PM</string>
-    <string name="regular_am_pm">Regular AM/PM</string>
-    <string name="small_weekday">Small weekday</string>
-    <string name="regular_weekday">Regular weekday</string>
-    <string name="small_date">Small date</string>
-    <string name="regular_date">Regular date</string>
-    <string name="statusbar_clock_color_title">Clock color</string>
-    <string name="statusbar_clock_color_summary">Clock color displayed in statusbar</string>
-
-    <string name="battery_percentage_indicator_title">Show battery % indicator</string>
-    <string name="battery_percentage_indicator_summary">Show battery percentage indicator front of battery icon</string>
-    <string name="battery_percentage_indicator_plugged_title">Indicate charging</string>
-    <string name="battery_percentage_indicator_plugged_summary">Show battery percentage indicator in different color during charging</string>
-    <string name="hide_battery_icon_title">Hide battery icon</string>
-    <string name="hide_battery_icon_summary">Completly hide battery icon from statusbar</string>
-
-    <string name="category_signalbars">Signal Bars</string>
-    <string name="statusbar_signal_text_title">Show signal text</string>
-    <string name="statusbar_signal_text_summary">Show signal with dBm</string>
-    <string name="statusbar_hide_signal_bars_title">Hide Signal Bars</string>
-    <string name="statusbar_hide_signal_bars_summary">Ability to hide the signal bars</string>
-    <string name="show_4g_for_lte_title">Use 4G icon on LTE</string>
-    <string name="show_4g_for_lte_summary">Show 4G network indicator icon instead of LTE icon</string>
-
-    <string name="status_bar_network_title">Network traffic</string>
-    <string name="status_bar_show_network_stats_title">Show network speeds</string>
-    <string name="status_bar_show_network_stats_summary">Show network speeds in statusbar</string>
-    <string name="status_bar_show_network_stats_hide_title">Hide on inactivity</string>
-    <string name="status_bar_show_network_stats_hide_summary">Hide network speeds if there is no activity</string>
-    <string name="status_bar_show_network_stats_flip_title">Flip Stats Positions</string>
-    <string name="status_bar_show_network_stats_flip_summary">Swap which is on top/bottom</string>
-    <string name="status_bar_network_stats_update_title">Update frequency</string>
-    <string name="status_bar_network_stats_update_summary">How often is indicator updated</string>
-    <string name="status_bar_network_stats_color_title">Network speeds text color</string>
-    <string name="status_bar_network_stats_color_summary">Network speeds text color in statusbar</string>
-
-    <!-- Installer -->
-    <string name="persist_options">Persistence</string>
-    <string name="persist_enable">Enable persistence</string>
-    <string name="persist_enable_summary">Enable data to persist across installs</string>
-    <string name="persist_prop_density">Persist density</string>
-    <string name="persist_prop_density_summary">Persist LCD density</string>
-    <string name="persist_file_hosts">Persist hosts</string>
-    <string name="persist_file_hosts_summary">Persist hosts file</string>
-    <string name="persist_file_xposed">Persist Xposed</string>
-    <string name="persist_file_xposed_summary">Persist file app_process for Xposed framework</string>
-
-    <!-- Ribbons -->
-    <string name="toggles_ribbon_instructions">Rearrange by dragging by the handle on the right. Remove by swiping.</string>
-    <string name="add_ribbon">Add Item</string>
-    <string name="left_ribbon_items">Left Ribbon Items</string>
-    <string name="left_ribbon_settings">Left Ribbon Settings</string>
-    <string name="right_ribbon_items">Right Ribbon Items</string>
-    <string name="right_ribbon_settings">Right Ribbon Settings</string>
-    <string name="lockscreen_ribbon_items">Lockscreen Ribbon Items</string>
-    <string name="lockscreen_ribbon_settings">Lockscreen Ribbon Settings</string>
-    <string name="enable_ribbon_title">Enable Ribbon</string>
-    <string name="enable_ribbon_summary">Enable the swipe area for this Ribbon</string>
-    <string name="ribbon_long_swipe_title">Swipe area longswipe</string>
-    <string name="ribbon_long_press_title">Swipe area longpress</string>
-    <string name="enable_ribbon_vibrate_title">Swipe area vibrate</string>
-    <string name="enable_ribbon_vibrate_summary">Vibrate on touch of swipe area</string>
-    <string name="swipe_handle_location_title">Swipe handle location</string>
-    <string name="ribbon_auto_hide_title">Ribbon auto hide timeout</string>
-    <string name="hide_ribbon_timeout_never">Never</string>
-    <string name="hide_ribbon_timeout_1500">1.5 Sec</string>
-    <string name="hide_ribbon_timeout_3000">3 Sec</string>
-    <string name="hide_ribbon_timeout_5000">5 Sec</string>
-    <string name="hide_ribbon_timeout_10000">10 Sec</string>
-    <string name="hide_ribbon_timeout_15000">15 Sec</string>
-    <string name="hide_ribbon_timeout_30000">30 Sec</string>
-
-    <string name="icon_gravity_title">Icon gravity</string>
-    <string name="ribbon_drag_handle_width_title">Swipe area width</string>
-    <string name="ribbon_drag_handle_height_title">Swipe area height</string>
-    <string name="ribbon_handle_color_title">Swipe area color</string>
-    <string name="ribbon_color_title">Ribbon color</string>
-    <string name="animation_type_title">Animation type</string>
-    <string name="animation_duration_title">Animation duration</string>
-    <string name="ribbon_space_title">Icon Space</string>
-    <string name="ribbon_size_title">Icon Size</string>
-    <string name="window_color_title">Window color</string>
-    <string name="window_space_title">Column Space</string>
-    <string name="window_size_title">Icon Size</string>
-    <string name="window_settings">Window Settings</string>
-
-    <!-- Toggles -->
-    <string name="title_toggles">Toggles</string>
-    <string name="toggles_style_tile">Tiles</string>
-    <string name="toggles_style_traditional">Traditional pulldown</string>
-    <string name="toggles_style_scrollable">Traditional scrollable</string>
-    <string name="toggles_display_close">Close</string>
-
-    <string name="toggles_order_title">Toggle order</string>
-    <string name="toggles_order_summary">Choose the order in which your toggles are displayed</string>
-
-    <string name="toggle_dialog_arrange_title">Toggle setup</string>
-    <string name="toggle_dialog_add_toggles">Add a toggle</string>
-    <string name="toggle_swap_handle_side">Drag handle on right</string>
-    <string name="toggles_style_title">Toggle style</string>
-    <string name="toggles_per_row_title">Toggles per row</string>
-    <string name="toggles_per_row_three">3</string>
-    <string name="toggles_per_row_four">4</string>
-    <string name="toggles_per_row_five">5</string>
-    <string name="add_toggles">Add toggle</string>
-
-    <string name="toggles_enable_fasttoggle_title">Enable fast toggle</string>
-    <string name="toggles_enable_fasttoggle_summary">Overrides default behavior</string>
-    <string name="toggles_choose_fasttoggle_side_title">Choose fast toggle side</string>
-    <string name="toggles_choose_fasttoggle_side_summary">Select the side that triggers the fast toggle</string>
-    <string name="right">Right</string>
-    <string name="left">Left</string>
-    <string name="toggles_swipe_to_switch_title">Swipe to switch</string>
-    <string name="toggles_swipe_to_switch_summary">Swipe to switch between notifications and Quick Settings</string>
-    <string name="toggle_tab_arrange">Toggle setup</string>
-    <string name="toggles_tab_settings">Configure</string>
-    <string name="toggles_arrange_instructions">Rearrange by dragging by the handle on the right. Remove by swiping.</string>
-
-    <string name="toggles_collapse_generic_title">Collapse shade on toggle click</string>
-    <string name="toggles_collapse_generic_summary">Close shade on all generic toggle actions</string>
-    <string name="toggles_vibrate_title">Vibrate on toggle click</string>
-    <string name="toggles_vibrate_summary">Vibrate on all generic toggle actions</string>
-
-    <string name="toggle_favcontact_title">Favorite contact</string>
-    <string name="toggle_favcontact_summary">Choose your favorite contact</string>
-
-    <string name="toggle_screenshot_delay_title">Screenshot delay</string>
-    <string name="toggle_screenshot_delay_summary">Delay for screenshot toggle to send intent to capture screen</string>
-
-    <string name="network_modes_title">Network modes</string>
-    <string name="network_modes_summary">Network modes to toggle</string>
-    <string name="network_mode_4g">2G/3G/4G Preferred</string>
-    <string name="network_mode_4g_3g">3G/4G Preferred</string>
-    <string name="network_mode_4g_only">4G Only</string>
-    <string name="network_mode_3g">2G/3G Preferred</string>
-    <string name="network_mode_3g_auto">2G/3G Auto</string>
-    <string name="network_mode_3g_only">3G Only</string>
-    <string name="network_mode_2g">2G Only</string>
-    <string name="network_mode_2g_cdma">2G Only (CDMA)</string>
-    <string name="network_mode_2g_evdo">2G Only (EvDo)</string>
-
-    <string name="location_modes_toggle_title">Location modes for toggle</string>
-    <string name="location_modes_toggle_all">All</string>
-    <string name="location_modes_toggle_hbs">High accuracy/Battery saving/Device only</string>
-    <string name="location_modes_toggle_hb">High accuracy/Battery saving</string>
-    <string name="location_modes_toggle_hs">High accuracy/Device only</string>
-    <string name="location_modes_toggle_ho">High accuracy/Off</string>
-    <string name="location_modes_toggle_bso">Battery saving/Device only/Off</string>
-    <string name="location_modes_toggle_bs">Battery saving/Device only</string>
-    <string name="location_modes_toggle_bo">Battery saving/Off</string>
-    <string name="location_modes_toggle_so">Device only/Off</string>
-
-    <!-- Navigation Bar -->
-    <string name="enable_navigation_bar_title">Enable navigation bar</string>
-    <string name="enable_navigation_bar_summary">Enable the on-screen navigation bar</string>
-    <string name="navigation_bar_dpad_keys_title">Arrow keys</string>
-    <string name="navigation_bar_dpad_keys_summary">Show arrow keys while keyboard is shown</string>
-
-    <!-- Nav Ring Targets -->
-    <string name="navbar_ring_cat">Navigation ring targets</string>
-    <string name="navbar_ring">Custom ring targets</string>
-    <string name="navring_enable_long">Enable longpress options </string>
-    <string name="navring_target_save">Navigation rings saved</string>
-    <string name="navring_target_reset_message">Do you want to reset the Navigation Ring?</string>
-    <string name="navring_target_reset">Navigation ring targets reset</string>
-    <string name="choose_action_title">Choose action</string>
-    <string name="choose_action_short_title">Choose short action</string>
-    <string name="choose_action_long_title">Choose long action</string>
-    <string name="action_long_save">set as long action</string>
-    <string name="title_navring_amount">Number of navigation ring targets</string>
-    <string name="summary_navring_amount">Choose number of targets in the navigation ring</string>
-    <string name="interface_navring_settings_title">Navigation Ring</string>
-    <string name="interface_navring_settings_summary">@null</string>
-    <string name="navring_target_info">Drag your finger to targets to assign actions</string>
-    <string name="navring_clear">Clear action</string>
-    <string name="action_short">Short action</string>
-    <string name="action_long">Long action</string>
-    <string name="action_double">Double tap action</string>
-    <string name="action_icon">Custom icon</string>
-    <string name="navring_target_amount_text">Set number of targets</string>
-    <string name="navring_target_longpress_text">Longpress actions</string>
-    <string name="description_target_unlock">Unlock</string>
-    <string name="description_direction_up">Slide up for unlock</string>
-    <string name="description_direction_down">Slide down for unlock</string>
-    <string name="description_direction_left">"Slide left for unlock</string>
-    <string name="description_direction_right">Slide right for unlock</string>
-    <string name="one_target">1 target</string>
-    <string name="two_targets">2 targets</string>
-    <string name="three_targets">3 targets</string>
-    <string name="four_targets">4 targets</string>
-    <string name="five_targets">5 targets</string>
-    <string name="custom_app_icon_successfully">"'s icon set successfully!"</string>
-    <string name="enable_navring_title">Enable navigation ring</string>
-    <string name="enable_navring_summary"></string>
-
-    <!-- Animation Controls -->
-    <string name="title_animation_controls">Animations</string>
-    <string name="activity_open_title">Activity Open Animation</string>
-    <string name="activity_close_title">Activity Close Animation</string>
-    <string name="task_open_title">Task Open Animation</string>
-    <string name="task_close_title">Task Close Animation</string>
-    <string name="task_move_to_front_title">Move To Front Animation</string>
-    <string name="task_move_to_back_title">Move To Back Animation</string>
-    <string name="wallpaper_open_title">Wallpaper Open Animation</string>
-    <string name="wallpaper_close_title">Wallpaper Close Animation</string>
-    <string name="wallpaper_intra_open_title">Wallpaper Intra Open Animation</string>
-    <string name="wallpaper_intra_close_title">Wallpaper Intra Close Animation</string>
-    <string name="title_animation_no_override">Prevent App Overrides</string>
-    <string name="summary_animation_no_override">Prevent apps from overriding transitions.</string>
-    <string name="animation_duration_default">Default</string>
-    <string name="animation_exit_only_title">Enter only animation</string>
-    <string name="animation_reverse_exit_title">Reverse exit animation</string>
-
-    <!-- Toast Animations -->
-    <string name="toast_animation_title">Toast Animations</string>
-    <string name="toast_none_animation">None</string>
-    <string name="toast_default_animation">Default</string>
-    <string name="toast_fade_animation">Fade Animation</string>
-    <string name="toast_SlideRight_animation">SlideRight Animation</string>
-    <string name="toast_SlideLeft_animation">SlideLeft Animation</string>
-    <string name="toast_Xylon_animation">Xylon Animation</string>
-    <string name="toast_Toko_animation">Toko Animation</string>
-    <string name="toast_Tn_animation">Tn Animation</string>
-    <string name="toast_Honami_animation">Honami Animation</string>
-    <string name="toast_FastFade_animation">FastFade Animation</string>
-    <string name="toast_GrowFade_animation">GrowFade Animation</string>
-    <string name="toast_GrowFadeCenter_animation">GrowFadeCenter Animation</string>
-    <string name="toast_GrowFadeBottom_animation">GrowFadeBottom Animation</string>
-    <string name="toast_Translucent_animation">Translucent Animation</string>
-
-    <!-- ListView -->
-    <string name="listview_title">ListView</string>
-    <string name="listview_animation_title">ListView Animation</string>
-    <string name="listview_off">Default</string>
-    <string name="listview_wave_left">Wave (left)</string>
-    <string name="listview_wave_right">Wave (right)</string>
-    <string name="listview_alpha">Alpha</string>
-    <string name="listview_scale">Scale</string>
-    <string name="listview_stack_top">Stack (top)</string>
-    <string name="listview_stack_bottom">Stack (bottom)</string>
-    <string name="listview_unfold">Unfold</string>
-    <string name="listview_fold">Fold</string>
-    <string name="listview_translate_left">Translate (left)</string>
-    <string name="listview_translate_right">Translate (right)</string>
-
-    <string name="listview_interpolator_title">ListView Interpolator</string>
-    <string name="listview_accelerate_interpolator">Accelerate</string>
-    <string name="listview_decelerate_interpolator">Decelerate</string>
-    <string name="listview_accelerate_decelerate_interpolator">Accelerate and decelerate</string>
-    <string name="listview_anticipate_interpolator">Anticipate</string>
-    <string name="listview_overshoot_interpolator">Overshoot</string>
-    <string name="listview_anticipate_overshoot_interpolator">Anticipate and overshoot</string>
-    <string name="listview_bounce_interpolator">Bounce</string>
-
-    <!-- CRT animation -->
-    <string name="crt_title">CRT</string>
-    <string name="system_power_crt_mode_title">CRT animation</string>
-    <string name="system_power_crt_mode_dialog_title">CRT animation</string>
-    <string name="system_power_crt_mode_off">Don\'t show</string>
-    <string name="system_power_crt_mode_horizontal">Collapse horizontal</string>
-    <string name="system_power_crt_mode_vertical">Collapse vertical</string>
-    <string name="system_power_crt_mode_both">Collapse orientation dependent</string>
-    <string name="system_power_crt_mode_scale">Scale down</string>
-
-    <!-- Smooth ProgressBar -->
-    <string name="progressbar_title">ProgressBar</string>
-    <string name="progressbar_mirror_title">Mirror Mode</string>
-    <string name="progressbar_reverse_title">Reversed</string>
-    <string name="progressbar_speed_title">Speed</string>
-    <string name="progressbar_width_title">Section Width</string>
-    <string name="progressbar_length_title">Separator Length</string>
-    <string name="progressbar_count_title">Section Count</string>
-    <string name="progressbar_color_1_title">Color 1</string>
-    <string name="progressbar_color_2_title">Color 2</string>
-    <string name="progressbar_color_3_title">Color 3</string>
-    <string name="progressbar_color_4_title">Color 4</string>
-    <string name="sample_progressbar_text">Preview</string>
-
-    <!-- Lockscreen -->
-    <string name="volume_wake_screen">Volume rocker wake</string>
-    <string name="volume_wake_screen_summary">Use the volume keys to wake the screen</string>
-    <string name="volume_music_controls">Volume music controls</string>
-    <string name="volume_music_controls_summary">Whether volume up/down can be long pressed to skip track</string>
-    <string name="lockscreen_minimize_challenge_title">Minimize lockscreen challenge</string>
-    <string name="lockscreen_minimize_challenge_summary">Set wether the lockscreen challenge (circle, pattern, pin) is minimized when the screen is turned on.</string>
-
-    <string name="add_button">Add button</string>
-    <string name="navbar_tab_arrange">Rearrange</string>
-    <string name="navbar_tab_settings">Settings</string>
-
-    <string name="navigation_bar_height_title">Navigation Bar height</string>
-    <string name="navigation_bar_height_summary">Navigation Bar height while in portrait</string>
-    <string name="navigation_bar_height_landscape_title">Navigation Bar height landscape</string>
-    <string name="navigation_bar_height_landscape_summary">Navigation Bar height while in landscape</string>
-    <string name="navigation_bar_width_title">Navigation Bar width</string>
-    <string name="navigation_bar_width_summary">Navigation Bar height if the bar is along a side</string>
-
-    <string name="lockscreen_see_through">Transparent lockscreen</string>
-    <string name="lockscreen_see_through_summary">Shows the content behind your lockscreen, your data may be visible to those around you</string>
-    <string name="lockscreen_blur_radius">Blur radius</string>
-
-    <string name="battery_arc_lockscreen_handle">Battery arc handle</string>
-    <string name="battery_arc_lockscreen_handle_summary">An arc around the lockscreen handle representing battery level</string>
-
-    <string name="lockscreen_menu_unlock_title">Menu unlock</string>
-    <string name="lockscreen_menu_unlock_summary">Use the menu key to unlock the screen</string>
-
-    <string name="display_lockscreen_rotation_title">Rotate lockscreen</string>
-
-    <!-- Sound -->
-    <string name="safe_headset_volume_title">Safe headset volume</string>
-    <string name="safe_headset_volume_summary">Whether safe headset volume warning is shown</string>
-    <string name="volume_adjust_sounds_enable_title">Volume adjust sound</string>
-    <string name="volume_adjust_sounds_enable_summary">Play sound when adjusting volume with hard keys</string>
-
-    <!-- Power Menu -->
-    <string name="airplane_mode_options">Airplane mode</string>
-    <string name="immersive_mode_options">Immersive mode</string>
-    <string name="reboot_options">Reboot</string>
-    <string name="screenshot_mode_options">Screenshot</string>
-    <string name="screenrecord_mode_options">Screen Record</string>
-
-
-    <string name="hide_option">Hide option</string>
-    <string name="on_always">Show option</string>
-    <string name="on_when_insecure">Show option (except on secure lockscreen)</string>
-
-    <!-- LED -->
-    <string name="enable_charging_led_title">Enable charging LED</string>
-    <string name="enable_charging_led_summary">The LED is used as charging indicator</string>
-    <string name="led_on">LED on</string>
-    <string name="led_time_on">Time Light is on</string>
-    <string name="led_off">LED off</string>
-    <string name="led_time_off">Time Light is off</string>
-    <string name="led_time_seconds">" seconds"</string>
-    <string name="led_color_click">Click on the LED to change the color</string>
-    <string name="title_led_screen_on">Flash LED while screen is on</string>
-    <string name="led_custom_app">Selected app</string>
-    <string name="led_custom_default">Default</string>
-    <string name="led_change_app">Change</string>
-    <string name="led_delete_app">Delete</string>
-    <string name="led_keep_app">Keep</string>
-    <string name="led_custom_title">Custom LED apps</string>
-    <string name="led_custom_message">"Would you like to change the app: "</string>
-    <string name="led_edit_button">-</string>
-    <string name="led_test_notification">Test LED</string>
-    <string name="led_test_notification_message_now">"Now testing LED for: "</string>
-    <string name="led_test_notification_message_note">.\n\nPlease turn off your screen to see the
-        LED. Don\'t hit OK on this popup until you\'re done viewing the LED color.
-    </string>
-    <string name="led_test_ok">OK</string>
-
-    <!-- Lockscreen Notifications -->
-    <string name="lockscreen_notifications">Lockscreen notifications</string>
-    <string name="lockscreen_notifications_summary">Show pending notifications on lockscreen</string>
-    <string name="pocket_mode">Pocket mode</string>
-    <string name="pocket_mode_summary">Turn screen on and show all notifications when device is pulled out of pocket. Turn screen off when device gets back into pocket.</string>
-    <string name="show_always">Show always</string>
-    <string name="show_always_summary">Always turn screen on when pulled out of pocket, even when there are no notifications pending</string>
-    <string name="hide_low_priority">Hide low priority</string>
-    <string name="hide_low_priority_summary">Hide low priority notifications such as google now weather notifications</string>
-    <string name="hide_non_clearable">Hide non clearable</string>
-    <string name="hide_non_clearable_summary">Hide all non clearable notifications</string>
-    <string name="dismiss_all">Allow dismissing all notifications</string>
-    <string name="dismiss_all_summary">Allow dismissing even non clearable notifications. Of course, they\'re just hidden from lockscreen and not from the notification panel.</string>
-    <string name="expanded_view">Expanded notification view</string>
-    <string name="expanded_view_summary">Add possibility to toggle between normal and expanded view by longpress. The expanded view sometimes shows more private information so you might want to disable it.</string>
-    <string name="force_expanded_view">Force expanded view</string>
-    <string name="force_expanded_view_summary">Show notifications expanded by default. You still will be able to toggle between expanded and normal view.</string>
-    <string name="wake_on_notification">Wake on notification</string>
-    <string name="wake_on_notification_summary">Wake device when a new notification is received</string>
-    <string name="notifications_height">Notification count</string>
-    <string name="notifications_height_summary">Number of notifications displayed at once</string>
-    <string name="offset_top">Offset to the top of the screen:</string>
-    <string name="privacy_mode">Privacy Mode</string>
-    <string name="privacy_mode_summary">Disables notifications from being shown and dismissed. This way, you just see the icons of your notifications.</string>
-    <string name="excluded_apps_title">Excluded applications</string>
-    <string name="excluded_apps_summary">Excluded applications will not show up as lockscreen notifications</string>
-    <string name="notification_color">Notification background color</string>
-
-    <!-- Heads Up -->
-    <string name="category_heads_up">Heads up</string>
-    <string name="title_heads_up_enabled">Enable heads up</string>
-    <string name="add_app">Add app</string>
-    <string name="heads_up_dnd_title">Do not disturb</string>
-    <string name="heads_up_blacklist_title">Blacklist</string>
-    <string name="add_heads_up_dnd_summary">Don\'t show heads up in these applications. Remove by swiping.</string>
-    <string name="add_heads_up_blacklist_summary">Don\'t show heads up from these applications. Remove by swiping.</string>
-
-    <!-- Proximity Wakeup Check -->
-    <string name="wakeup_with_proximity_check_title">Prevent accidental wake-up</string>
-    <string name="wakeup_with_proximity_check_summary">Check the proximity sensor prior to waking up screen</string>
-
 </resources>

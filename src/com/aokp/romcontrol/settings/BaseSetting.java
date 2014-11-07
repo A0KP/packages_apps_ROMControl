@@ -13,7 +13,6 @@ import com.aokp.romcontrol.R;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
 
 /**
  * Base class from which all other layouts inherit from. Subclasses must
@@ -56,20 +55,6 @@ public class BaseSetting extends LinearLayout {
      */
     protected ViewGroup mRootView;
 
-    private final ArrayList<OnClickListener> mRegisteredClickListeners = new ArrayList<OnClickListener>();
-    private final OnClickListener mOnClickListener = new OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            for (OnClickListener clickListener : mRegisteredClickListeners) {
-                clickListener.onClick(view);
-            }
-        }
-    };
-
-    public final void setOnClickListener(OnClickListener listener) {
-        mRegisteredClickListeners.add(listener);
-    }
-
     /**
      * Interface to allow classes to receive callbacks when the user has modified the value of the setting.
      */
@@ -108,10 +93,7 @@ public class BaseSetting extends LinearLayout {
 
         setTitle(aTitle);
         setSummary(aSummary);
-        super.setOnClickListener(mOnClickListener);
     }
-
-
 
     /**
      * @param s the new setting to apply to this table/key. Null strings are considered empty strings.
@@ -119,8 +101,7 @@ public class BaseSetting extends LinearLayout {
      */
     protected final void setValue(String s) {
         if (aKey == null) {
-            // assume it's handled some other way
-            return;
+            throw new UnsupportedOperationException("No key to assign the value to!");
         }
         // accept null strings - just set them to empty
         if (s == null) {
@@ -176,10 +157,11 @@ public class BaseSetting extends LinearLayout {
 
     /**
      * @return the string value of the setting.
+     * @throws UnsupportedOperationException if no key was supplied
      */
     protected String getValue() {
         if (aKey == null) {
-            return null;
+            throw new UnsupportedOperationException("No value to get!");
         }
 
         // dirty dirty! use reflection to allow compilation via gradle/android studio
@@ -227,19 +209,8 @@ public class BaseSetting extends LinearLayout {
     /**
      * @return the key value which this preference is supposed to represent
      */
-    public final String getKey() {
+    protected final String getKey() {
         return aKey;
-    }
-
-    /**
-     * Used to assign or change a key value
-     */
-    public final void setKey(String key) {
-        aKey = key;
-    }
-
-    public void setDefaultValue(String defaultValue) {
-        aDefaultValue = defaultValue;
     }
 
     /**
@@ -285,10 +256,6 @@ public class BaseSetting extends LinearLayout {
 
     public void setOnSettingChangedListener(OnSettingChangedListener listener) {
         this.mOnSettingChangedListener = listener;
-        if(listener != null) {
-            // set initial value
-            listener.onSettingChanged(getTable(), getKey(), null, getValue());
-        }
     }
 
     /**

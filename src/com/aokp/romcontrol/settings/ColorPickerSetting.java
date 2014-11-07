@@ -30,8 +30,6 @@ import com.aokp.romcontrol.R;
 import net.margaritov.preference.colorpicker.ColorPickerDialog;
 import net.margaritov.preference.colorpicker.ColorPickerDialog.OnColorChangedListener;
 
-import java.lang.NumberFormatException;
-
 /**
  * Setting toggle which represents a boolean value
  * <p/>
@@ -89,11 +87,7 @@ public class ColorPickerSetting extends BaseSetting implements
          */
         String value = getValue();
         if (value != null && !value.isEmpty()) {
-            try {
-                mValue = Integer.parseInt(value);
-            } catch (NumberFormatException ex) {
-                mValue = mDefaultValue;
-            }
+            mValue = convertToColorInt(value);
         } else {
             mValue = mDefaultValue;
         }
@@ -102,7 +96,7 @@ public class ColorPickerSetting extends BaseSetting implements
         setOnClickListener(this);
     }
 
-    public void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+    protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
         onColorChanged(restoreValue ? getColor() : (Integer) defaultValue);
     }
 
@@ -140,9 +134,7 @@ public class ColorPickerSetting extends BaseSetting implements
 
     @Override
     public void onColorChanged(int color) {
-        String hex = convertToARGB(color);
-        int intHex = convertToColorInt(hex);
-        setValue(String.valueOf(intHex));
+        setValue(convertToARGB(color));
         mValue = color;
         setPreviewColor();
 //        try {
