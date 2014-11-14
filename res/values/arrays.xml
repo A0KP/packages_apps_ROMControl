@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="navigation_drawer_entries">
-        <item>@string/category_about_aokp</item>
+        <item>@string/category_about_carbon</item>
         <item>@string/category_general</item>
         <item>@string/category_hardware_keys</item>
         <item>@string/category_statusbar</item>
