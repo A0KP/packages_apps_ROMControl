@@ -3,13 +3,33 @@
     <string-array name="navigation_drawer_entries">
         <item>@string/category_about_carbon</item>
         <item>@string/category_general</item>
+        <item>@string/category_interface</item>
+        <item>@string/category_device</item>
+        <item>@string/category_lockscreen</item>
+        <item>@string/category_navigation_bar</item>
         <item>@string/category_hardware_keys</item>
+        <item>@string/category_pie</item>
+        <item>@string/category_power_menu</item>
         <item>@string/category_statusbar</item>
+        <item>@string/category_battery</item>
+        <item>@string/category_notifications</item>
+        <item>@string/category_quick_settings</item>
     </string-array>
+
     <string-array name="navigation_drawer_icons">
         <item>@drawable/ic_rom_control_about</item>
         <item>@drawable/ic_rom_control_general</item>
+        <item>@drawable/ic_rom_control_interface</item>
+        <item>@drawable/ic_rom_control_device</item>
+        <item>@drawable/ic_rom_control_keyguard</item>
+        <item>@drawable/ic_rom_control_navigation_bar</item>
         <item>@drawable/ic_rom_control_hardware_keys</item>
+        <item>@drawable/ic_rom_control_pie</item>
+        <item>@drawable/ic_rom_control_power_menu</item>
         <item>@drawable/ic_rom_control_signal</item>
+        <item>@drawable/ic_rom_control_battery</item>
+        <item>@drawable/ic_rom_control_notifications</item>
+        <item>@drawable/ic_rom_control_quick_settings</item>
+
     </string-array>
 </resources>

@@ -7,10 +7,19 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- Header Strings -->
-    <string name="category_general">General</string>
-    <string name="category_statusbar">Statusbar</string>
     <string name="category_about_carbon">About</string>
+    <string name="category_general">General</string>
+    <string name="category_interface">Interface</string>
+    <string name="category_device">Device</string>
+    <string name="category_lockscreen">Lockscreen</string>
+    <string name="category_navigation_bar">Navigation Bar</string>
     <string name="category_hardware_keys">Hardware Keys</string>
+    <string name="category_pie">PIE</string>
+    <string name="category_power_menu">Power Menu</string>
+    <string name="category_statusbar">Statusbar</string>
+    <string name="category_battery">Battery icon</string>
+    <string name="category_notifications">Notifications</string>
+    <string name="category_quick_settings">Quick Settings</string>
 
     <!-- Menu Items -->
     <string name="menu_show_drawer_icon">Show in app drawer</string>
@@ -23,7 +32,7 @@
     <string name="carbon_review_title">CarbonROM Code Review - Gerrit</string>
     <string name="carbon_review_summary">View CarbonROM\'s Gerrit instance</string>
     <string name="carbon_irc_title">Join us on IRC</string>
-    <string name="carbon_irc_summary">#carbonrom @ irc.freenode.net</string>
+    <string name="carbon_irc_summary">#teamcarbon @ irc.freenode.net</string>
     <string name="about_carbon">About CarbonROM</string>
     <string name="about_carbon_summary">@null</string>
     <string name="donate_carbon">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=WQV8UFE9JR9TG
