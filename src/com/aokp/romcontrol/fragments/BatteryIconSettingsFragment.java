@@ -36,6 +36,5 @@ public class BatteryIconSettingsFragment extends Fragment implements OnSettingCh
 
     @Override
     public void onSettingChanged(String table, String key, String oldValue, String value) {
-        }
     }
 }
