@@ -5,11 +5,11 @@
         >
 
     <ImageView android:src="@drawable/carbon_logo_big"
-               android:layout_height="250dp"
-               android:layout_width="250dp"
+               android:layout_height="320dp"
+               android:layout_width="320dp"
                android:layout_alignParentBottom="true"
                android:layout_alignParentRight="true"
-               android:layout_marginBottom="-100dp"
+               android:layout_marginBottom="-75dp"
                android:layout_marginRight="-100dp"
                />
 

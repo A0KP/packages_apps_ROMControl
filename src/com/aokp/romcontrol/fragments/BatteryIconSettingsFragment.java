@@ -10,19 +10,20 @@ import com.aokp.romcontrol.R;
 import com.aokp.romcontrol.settings.BaseSetting.OnSettingChangedListener;
 import com.aokp.romcontrol.settings.CheckboxSetting;
 
-public class StatusbarSettingsFragment extends Fragment implements OnSettingChangedListener {
+public class BatteryIconSettingsFragment extends Fragment implements OnSettingChangedListener {
 
-    CheckboxSetting mDoubleTapSleep;
+    CheckboxSetting mBatteryIndicator, mBatteryIndicatorPlugged;
 
-    public StatusbarSettingsFragment() {
+    public BatteryIconSettingsFragment() {
 
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_statusbar_settings, container, false);
+        View v = inflater.inflate(R.layout.fragment_battery_icon_settings, container, false);
 
-        mDoubleTapSleep = (CheckboxSetting) v.findViewById(R.id.double_tap_sleep_gesture);
+        mBatteryIndicator = (CheckboxSetting) v.findViewById(R.id.status_bar_show_battery_percent);
+        mBatteryIndicatorPlugged = (CheckboxSetting) v.findViewById(R.id.battery_percentage_indicator_plugged);
 
         return v;
     }
@@ -30,10 +31,11 @@ public class StatusbarSettingsFragment extends Fragment implements OnSettingChan
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mDoubleTapSleep.setOnSettingChangedListener(this);
+        mBatteryIndicator.setOnSettingChangedListener(this);
     }
 
     @Override
     public void onSettingChanged(String table, String key, String oldValue, String value) {
+        }
     }
 }

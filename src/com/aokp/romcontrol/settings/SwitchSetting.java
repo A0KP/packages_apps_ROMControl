@@ -5,7 +5,7 @@ import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.CheckBox;
+import android.widget.Switch;
 import com.aokp.romcontrol.R;
 
 /**
@@ -16,24 +16,24 @@ import com.aokp.romcontrol.R;
  * <li>aokp:descriptionOff - a @string reference, which will be set as the summary when disabled.
  * </ul>
  */
-public class CheckboxSetting extends BaseSetting implements OnClickListener {
+public class SwitchSetting extends BaseSetting implements OnClickListener {
 
-    CheckBox mCheckBox;
+    Switch mSwitch;
 
     String aDescriptionOn, aDescriptionOff;
 
     Boolean mChecked = false;
 
 
-    public CheckboxSetting(Context context) {
+    public SwitchSetting(Context context) {
         this(context, null);
     }
 
-    public CheckboxSetting(Context context, AttributeSet attrs) {
+    public SwitchSetting(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CheckboxSetting(Context context, AttributeSet attrs, int defStyle) {
+    public SwitchSetting(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
         if (attrs != null) {
@@ -55,8 +55,8 @@ public class CheckboxSetting extends BaseSetting implements OnClickListener {
         /**
          * Inflate Views
          */
-        addView(View.inflate(context, R.layout.setting_checkbox, mRootView));
-        mCheckBox = (CheckBox) findViewById(R.id.checkbox);
+        addView(View.inflate(context, R.layout.setting_switch, mRootView));
+        mSwitch = (Switch) findViewById(R.id.the_switch);
 
 
         /**
@@ -75,7 +75,7 @@ public class CheckboxSetting extends BaseSetting implements OnClickListener {
             mChecked = getValue().equals("1");
 
         }
-        mCheckBox.setChecked(mChecked);
+        mSwitch.setChecked(mChecked);
 
         setOnClickListener(this);
         setFocusable(true);
@@ -100,7 +100,7 @@ public class CheckboxSetting extends BaseSetting implements OnClickListener {
 
     public void setChecked(boolean checked) {
         mChecked = checked;
-        mCheckBox.setChecked(checked);
+        mSwitch.setChecked(checked);
         setValue(checked ? "1" : "0");
     }
 

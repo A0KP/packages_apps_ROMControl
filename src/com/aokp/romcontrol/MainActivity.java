@@ -10,11 +10,20 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.aokp.romcontrol.fragments.NavigationDrawerFragment;
 import com.aokp.romcontrol.fragments.AboutFragment;
 import com.aokp.romcontrol.fragments.GeneralSettingsFragment;
-import com.aokp.romcontrol.fragments.HardwareKeysFragment;
-import com.aokp.romcontrol.fragments.NavigationDrawerFragment;
+import com.aokp.romcontrol.fragments.InterfaceSettingsFragment;
+import com.aokp.romcontrol.fragments.DeviceSettingsFragment;
+import com.aokp.romcontrol.fragments.LockScreenSettingsFragment;
+import com.aokp.romcontrol.fragments.NavigationBarSettingsFragment;
+import com.aokp.romcontrol.fragments.HardwareKeysSettingsFragment;
+import com.aokp.romcontrol.fragments.PIESettingsFragment;
+import com.aokp.romcontrol.fragments.PowerMenuSettingsFragment;
 import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
+import com.aokp.romcontrol.fragments.BatteryIconSettingsFragment;
+import com.aokp.romcontrol.fragments.NotificationsSettingsFragment;
+import com.aokp.romcontrol.fragments.QuickSettingsFragment;
 
 
 public class MainActivity extends Activity
@@ -73,12 +82,49 @@ public class MainActivity extends Activity
                 break;
 
             case 2:
-                fragment = new HardwareKeysFragment();
+                fragment = new InterfaceSettingsFragment();
                 break;
 
             case 3:
+                fragment = new DeviceSettingsFragment();
+                break;
+
+            case 4:
+                fragment = new LockScreenSettingsFragment();
+                break;
+
+            case 5:
+                fragment = new NavigationBarSettingsFragment();
+                break;
+
+            case 6:
+                fragment = new HardwareKeysSettingsFragment();
+                break;
+
+            case 7:
+                fragment = new PIESettingsFragment();
+                break;
+
+            case 8:
+                fragment = new PowerMenuSettingsFragment();
+                break;
+
+            case 9:
                 fragment = new StatusbarSettingsFragment();
                 break;
+
+            case 10:
+                fragment = new BatteryIconSettingsFragment();
+                break;
+
+            case 11:
+                fragment = new NotificationsSettingsFragment();
+                break;
+
+            case 12:
+                fragment = new QuickSettingsFragment();
+                break;
+
         }
         return fragment;
     }

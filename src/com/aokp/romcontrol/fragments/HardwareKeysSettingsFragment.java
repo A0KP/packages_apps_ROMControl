@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import com.aokp.romcontrol.R;
 import com.aokp.romcontrol.settings.SingleChoiceSetting;
 
-public class HardwareKeysFragment extends Fragment {
+public class HardwareKeysSettingsFragment extends Fragment {
 
     private static final int KEY_MASK_HOME = 0x01;
     private static final int KEY_MASK_BACK = 0x02;
@@ -38,7 +38,7 @@ public class HardwareKeysFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_hardware_keys, container, false);
+        View v = inflater.inflate(R.layout.fragment_hardware_keys_settings, container, false);
 
         /**
          * Filter out buttons
