@@ -1,4 +1,4 @@
-package com.aokp.romcontrol.fragments;
+package com.aokp.romcontrol.fragments.statusbar;
 
 import android.app.Fragment;
 import android.content.ContentResolver;

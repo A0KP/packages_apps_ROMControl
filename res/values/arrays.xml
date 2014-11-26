@@ -11,7 +11,6 @@
         <item>@string/category_pie</item>
         <item>@string/category_power_menu</item>
         <item>@string/category_statusbar</item>
-        <item>@string/category_battery</item>
         <item>@string/category_notifications</item>
         <item>@string/category_quick_settings</item>
     </string-array>
@@ -27,7 +26,6 @@
         <item>@drawable/ic_rom_control_pie</item>
         <item>@drawable/ic_rom_control_power_menu</item>
         <item>@drawable/ic_rom_control_signal</item>
-        <item>@drawable/ic_rom_control_battery</item>
         <item>@drawable/ic_rom_control_notifications</item>
         <item>@drawable/ic_rom_control_quick_settings</item>
 

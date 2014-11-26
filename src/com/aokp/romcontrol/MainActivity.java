@@ -23,8 +23,7 @@ import com.aokp.romcontrol.fragments.NavigationBarSettingsFragment;
 import com.aokp.romcontrol.fragments.HardwareKeysSettingsFragment;
 import com.aokp.romcontrol.fragments.PIESettingsFragment;
 import com.aokp.romcontrol.fragments.PowerMenuSettingsFragment;
-import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
-import com.aokp.romcontrol.fragments.BatteryIconSettingsFragment;
+import com.aokp.romcontrol.fragments.statusbar.StatusbarTabHostFragment;
 import com.aokp.romcontrol.fragments.NotificationsSettingsFragment;
 import com.aokp.romcontrol.fragments.QuickSettingsFragment;
 
@@ -113,18 +112,14 @@ public class MainActivity extends Activity
                 break;
 
             case 9:
-                fragment = new StatusbarSettingsFragment();
+                fragment = new StatusbarTabHostFragment();
                 break;
 
             case 10:
-                fragment = new BatteryIconSettingsFragment();
-                break;
-
-            case 11:
                 fragment = new NotificationsSettingsFragment();
                 break;
 
-            case 12:
+            case 11:
                 fragment = new QuickSettingsFragment();
                 break;
 

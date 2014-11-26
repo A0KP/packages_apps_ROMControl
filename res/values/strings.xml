@@ -36,6 +36,7 @@
     <string name="category_power_menu">Power Menu</string>
     <string name="category_statusbar">Statusbar</string>
     <string name="category_battery">Battery icon</string>
+    <string name="category_clock">Clock</string>
     <string name="category_notifications">Notifications</string>
     <string name="category_quick_settings">Quick Settings</string>
 
