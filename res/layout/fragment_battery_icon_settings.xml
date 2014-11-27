@@ -30,7 +30,7 @@
             style="@style/defaultSize"
             android:title="@string/category_battery"/>
 
-        <com.aokp.romcontrol.settings.CheckboxSetting
+        <com.aokp.romcontrol.settings.SwitchSetting
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
 

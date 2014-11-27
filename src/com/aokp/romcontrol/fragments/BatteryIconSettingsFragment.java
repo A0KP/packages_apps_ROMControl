@@ -1,6 +1,10 @@
 package com.aokp.romcontrol.fragments;
 
+import android.app.Activity;
 import android.app.Fragment;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -9,10 +13,13 @@ import android.view.ViewGroup;
 import com.aokp.romcontrol.R;
 import com.aokp.romcontrol.settings.BaseSetting.OnSettingChangedListener;
 import com.aokp.romcontrol.settings.CheckboxSetting;
+import com.aokp.romcontrol.settings.SwitchSetting;
 
 public class BatteryIconSettingsFragment extends Fragment implements OnSettingChangedListener {
 
-    CheckboxSetting mBatteryIndicator;
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
+
+    SwitchSetting mShowBatteryPercent;
 
     public BatteryIconSettingsFragment() {
 
@@ -22,7 +29,18 @@ public class BatteryIconSettingsFragment extends Fragment implements OnSettingCh
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_battery_icon_settings, container, false);
 
-        mBatteryIndicator = (CheckboxSetting) v.findViewById(R.id.status_bar_show_battery_percent);
+        mShowBatteryPercent = (SwitchSetting) v.findViewById(R.id.status_bar_show_battery_percent);
+        mShowBatteryPercent.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0) == 1);
+
+        mShowBatteryPercent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Settings.System.putInt(getActivity().getContentResolver(),
+                        Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT,
+                        mShowBatteryPercent.isChecked() ? 1 : 0);
+            }
+        });
 
         return v;
     }
@@ -30,7 +48,7 @@ public class BatteryIconSettingsFragment extends Fragment implements OnSettingCh
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mBatteryIndicator.setOnSettingChangedListener(this);
+        mShowBatteryPercent.setOnSettingChangedListener(this);
     }
 
     @Override
