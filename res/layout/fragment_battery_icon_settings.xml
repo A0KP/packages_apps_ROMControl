@@ -24,8 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              style="@style/settingsFragmentStyle">
+    <LinearLayout style="@style/settingsFragmentStyle">
 
     <com.aokp.romcontrol.widgets.CategorySeparator
             style="@style/defaultSize"
