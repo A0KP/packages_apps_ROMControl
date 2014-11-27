@@ -38,16 +38,6 @@
                 android:title="@string/status_bar_show_battery_percent_title"
                 android:summary="@string/status_bar_show_battery_percent_summary"
                 android:key="status_bar_show_battery_percent"
-                android:defaultValue="true"
-                />
-        <com.aokp.romcontrol.settings.CheckboxSetting
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-
-                android:id="@+id/battery_percentage_indicator_plugged"
-                android:title="@string/battery_percentage_indicator_plugged_title"
-                android:summary="@string/battery_percentage_indicator_plugged_summary"
-                android:key="battery_percentage_indicator_plugged"
                 android:defaultValue="false"
                 />
     </LinearLayout>

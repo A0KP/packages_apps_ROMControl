@@ -12,7 +12,7 @@ import com.aokp.romcontrol.settings.CheckboxSetting;
 
 public class BatteryIconSettingsFragment extends Fragment implements OnSettingChangedListener {
 
-    CheckboxSetting mBatteryIndicator, mBatteryIndicatorPlugged;
+    CheckboxSetting mBatteryIndicator;
 
     public BatteryIconSettingsFragment() {
 
@@ -23,7 +23,6 @@ public class BatteryIconSettingsFragment extends Fragment implements OnSettingCh
         View v = inflater.inflate(R.layout.fragment_battery_icon_settings, container, false);
 
         mBatteryIndicator = (CheckboxSetting) v.findViewById(R.id.status_bar_show_battery_percent);
-        mBatteryIndicatorPlugged = (CheckboxSetting) v.findViewById(R.id.battery_percentage_indicator_plugged);
 
         return v;
     }
