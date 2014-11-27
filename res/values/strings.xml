@@ -51,6 +51,7 @@
         <item quantity="one">Please select at most <xliff:g id="number">%d</xliff:g> item.</item>
         <item quantity="other">Please select at most <xliff:g id="number">%d</xliff:g> items.</item>
     </plurals>
+    <string name="display_close">Close</string>
 
     <!-- About -->
     <string name="devs">The Crew</string>

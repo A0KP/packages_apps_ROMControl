@@ -12,8 +12,6 @@ import com.aokp.romcontrol.settings.CheckboxSetting;
 
 public class StatusbarSettingsFragment extends Fragment implements OnSettingChangedListener {
 
-    CheckboxSetting mDoubleTapSleep;
-
     public StatusbarSettingsFragment() {
 
     }
@@ -22,15 +20,12 @@ public class StatusbarSettingsFragment extends Fragment implements OnSettingChan
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_statusbar_settings, container, false);
 
-        mDoubleTapSleep = (CheckboxSetting) v.findViewById(R.id.double_tap_sleep_gesture);
-
         return v;
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mDoubleTapSleep.setOnSettingChangedListener(this);
     }
 
     @Override
