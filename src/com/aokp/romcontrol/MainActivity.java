@@ -23,12 +23,17 @@ import android.app.FragmentManager;
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.provider.Settings;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import android.view.View;
+
+import com.android.settings.R;
+import com.android.settings.SettingsPreferenceFragment;
+import com.android.internal.logging.MetricsLogger;
 
 import com.aokp.romcontrol.fragments.about.AboutCrewFragment;
 import com.aokp.romcontrol.fragments.about.AboutFragment;
@@ -54,9 +59,8 @@ import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
 
 import cyanogenmod.providers.CMSettings;
 
-public class MainActivity extends Activity
+public class MainActivity extends PreferenceActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
-
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -91,6 +95,10 @@ public class MainActivity extends Activity
 
         ActionBar bar = getActionBar();
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+    }
+
+    protected int getMetricsCategory() {
+        return MetricsLogger.DONT_TRACK_ME_BRO;
     }
 
     @Override
