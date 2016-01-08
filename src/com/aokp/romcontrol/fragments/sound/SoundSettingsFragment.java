@@ -90,7 +90,6 @@ public class SoundSettingsFragment extends Fragment {
         private SwitchPreference mCameraSounds;
 
         private static final String KEY_CAMERA_SOUNDS = "camera_sounds";
-        private static final String PROP_CAMERA_SOUND = "persist.sys.camera-sound";
 
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -111,7 +110,8 @@ public class SoundSettingsFragment extends Fragment {
             mAnnoyingNotifications.setValue(Integer.toString(notificationThreshold));
             mAnnoyingNotifications.setOnPreferenceChangeListener(this);
             mCameraSounds = (SwitchPreference) findPreference(KEY_CAMERA_SOUNDS);
-            mCameraSounds.setChecked(SystemProperties.getBoolean(PROP_CAMERA_SOUND, true));
+            mCameraSounds.setChecked(Settings.System.getInt(getActivity().getContentResolver(),
+                    Settings.System.PROP_CAMERA_SOUND, 1) != 0);
             mCameraSounds.setOnPreferenceChangeListener(this);
         }
 
@@ -143,7 +143,8 @@ public class SoundSettingsFragment extends Fragment {
             }
             if (KEY_CAMERA_SOUNDS.equals(key)) {
                if ((Boolean) objValue) {
-                   SystemProperties.set(PROP_CAMERA_SOUND, "1");
+                    Settings.System.putInt(getActivity().getContentResolver(),
+                            Settings.System.PROP_CAMERA_SOUND, 1);
                } else {
                    showDialogInner(DLG_CAMERA_SOUND);
                }
@@ -201,7 +202,8 @@ public class SoundSettingsFragment extends Fragment {
                         .setPositiveButton(R.string.ok,
                             new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                SystemProperties.set(PROP_CAMERA_SOUND, "0");
+                                Settings.System.putInt(getOwner().getActivity().getContentResolver(),
+                                        Settings.System.PROP_CAMERA_SOUND, 0);
                             }
                         })
                         .setNegativeButton(R.string.cancel,
