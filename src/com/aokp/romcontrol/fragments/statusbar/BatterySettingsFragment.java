@@ -117,7 +117,7 @@ public class BatterySettingsFragment extends Fragment {
                     (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
 
             int batteryStyle = CMSettings.System.getInt(resolver,
-                CMSettings.System.STATUS_BAR_BATTERY_STYLE, 0);
+                CMSettings.System.STATUS_BAR_BATTERY_STATUS_STYLE, 0);
             mStatusBarBattery.setValue(String.valueOf(batteryStyle));
                 mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
             mStatusBarBattery.setOnPreferenceChangeListener(this);
@@ -167,7 +167,7 @@ public class BatterySettingsFragment extends Fragment {
                 int batteryStyle = Integer.valueOf((String) newValue);
                 int index = mStatusBarBattery.findIndexOfValue((String) newValue);
                 CMSettings.System.putInt(
-                        resolver, CMSettings.System.STATUS_BAR_BATTERY_STYLE, batteryStyle);
+                        resolver, CMSettings.System.STATUS_BAR_BATTERY_STATUS_STYLE, batteryStyle);
                 mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
                 enableStatusBarBatteryDependents(batteryStyle);
                 return true;
